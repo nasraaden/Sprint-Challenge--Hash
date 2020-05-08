@@ -5,6 +5,16 @@ def intersection(arrays):
     my_dict = {}
     result = []
 
+    for array in arrays:
+        for i in array:
+            if i in my_dict:
+                my_dict[i] += 1
+            else:
+                my_dict[i] = 1
+
+            if my_dict[i] > 1 and i not in result:
+                result.append(i)
+
     return result
 
 
