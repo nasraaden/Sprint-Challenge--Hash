@@ -9,6 +9,7 @@ def has_negatives(a):
     for num in a:
         my_dict[num] = 0
         # print(my_dict)
+
         if num > 0:
             if num*-1 in my_dict:
                 result.append(num)
